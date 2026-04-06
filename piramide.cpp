@@ -13,13 +13,11 @@ int main(){
         std:: cout << sterren << std::endl;
     }
 
-     for(int j = n; j <= n; j--){
+     for(int j = n; j > 1; j--){
         std::string sterren(j, '*');
         std:: cout << sterren << std::endl;
 
-        if(j <= 0){
-            break;
-        }
+        
     }
 
     return 0;
