@@ -13,7 +13,7 @@ int main(){
         std:: cout << sterren << std::endl;
     }
 
-     for(int j = n; j > 1; j--){
+     for(int j = n; j >= 1; j--){
         std::string sterren(j, '*');
         std:: cout << sterren << std::endl;
 
