@@ -3,7 +3,7 @@
 #include <string>
 
 
-namespace TekstVerschil{
+namespace NumVerschil{
     std::vector<int> v1 {1, 3, 5, 2, 6, 8, 9, 11, 15, 19, 20};
     std::vector<int> v2 {2, 3, 4, 5, 6, 7, 9, 10, 11, 15, 22};
 }
@@ -34,8 +34,8 @@ void smaller_then_values(const std::vector<int>& v2){
 
 int main() {
     // vectors ophalen van de namespace
-    std::vector<int> nums_1 {TekstVerschil::v1};
-    std::vector<int> nums_2 {TekstVerschil::v2};
+    std::vector<int> nums_1 {NumVerschil::v1};
+    std::vector<int> nums_2 {NumVerschil::v2};
 
     // lege vectors aanmaken
     std::vector<int> same_nums;
