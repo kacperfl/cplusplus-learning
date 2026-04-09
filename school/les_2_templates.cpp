@@ -2,8 +2,6 @@
 #include <string>
 #include <vector>
 
-
-
 template<typename T>
 T add(T a, T b){
     return a + b;
@@ -17,5 +15,5 @@ int main(){
     std::string z = "doei";
 
     std::cout << add(a, b) << std::endl;
-    std::cout << add(x, z);
+    std::cout << add(x, z) << std::endl;
 }
