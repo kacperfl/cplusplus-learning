@@ -23,7 +23,7 @@ int opdracht_2(int *arr, int size){
 }
 
 int opdracht_3(int *arr, int size){
-    int *p = arr;
+    int *p = arr;  // arr[0]
     int biggest_value = *p;
 
     for(int i = 1; i < size; i++){
