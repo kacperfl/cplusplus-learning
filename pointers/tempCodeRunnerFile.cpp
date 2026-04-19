@@ -1,43 +1,14 @@
-#include "iostream"
+ int *arr = new int[size];
 
-
-
-void opdracht_1(){
-    int arr[5]  {10, 20, 30, 40, 50};
-    int* p = arr;
-
-    for(size_t i = 0; i < sizeof(arr) / sizeof(*p); i++){
-        std::cout<< *(p + i) << '\n';
-    }
-}
-
-int opdracht_2(int *arr, int size){
-    int sum = 0;
-    int *p = arr;
-
-    for(int i = 0; i < size; i++){
-        sum += *(p + i);
+    for(size_t i = 1; i < size; i++){
+        *(arr + i) = i + 7;
     }
 
-    return sum;
-}
+    int biggest_val = arr[0];
 
-int opdracht_3(int *arr, int size){
-    int *p = arr;
-    int biggest_value = *p;
-
-    for(int i = 0; i < size; i++){
-        if(*(p + i) > biggest_value){
-            biggest_value = *(p + i);
+    for(size_t i = 1; i < size; i++){
+        if (*(arr + i) > biggest_val){
+            biggest_val = *(arr + i);
         }
+    
     }
-    return biggest_value;
-}
-
-int main(){
-    int arr[7] = {4,7,12,45,84,112,145};
-
-    opdracht_1();
-    std::cout<< opdracht_2(arr, 7) << std::endl;
-    std::cout<< opdracht_3(arr, 7) << std::endl;
-}
