@@ -4,7 +4,9 @@
 int find_lowest_value(int *arr, size_t size){
     for(size_t i = 0; i < size; i++){
         *(arr + i) = rand() % 100;
+        std::cout << arr[i] << ' ';
     }
+    std::cout << '\n';
 
     int lowest_value = arr[0];
 
