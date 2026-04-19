@@ -32,8 +32,8 @@ int main() {
     // zodra de huidige node, (aan het begin node_1 ) geen null ptr bevat blijft de loop door gaan
     while(current != nullptr){
         std::cout << current->value << '\n'; // printen van de huidige waarden binnen het node
-        current = current->next; // we passen de current var aan met de volgende node
         delete current; // tijdens loopen de gebruikte node verwijderen uit de heap
+        current = current->next; // we passen de current var aan met de volgende node
     }
 
 
